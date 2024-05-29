@@ -21,10 +21,11 @@ const userSchema = new mongoose.Schema(
 			required: true,
 			enum: ["male", "female"],
 		},
-		avatar: {
+		profilePic: {
 			type: String,
 			default: "",
 		},
+		// createdAt, updatedAt => Member since <createdAt>
 	},
 	{ timestamps: true }
 );

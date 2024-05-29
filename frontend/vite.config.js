@@ -7,8 +7,8 @@ export default defineConfig({
 	server: {
 		port: 3000,
 		proxy: {
-			"/apple-chat": {
-				target: "http://localhost:6666",
+			"/api": {
+				target: "http://localhost:4444",
 			},
 		},
 	},
